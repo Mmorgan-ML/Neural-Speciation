@@ -4,7 +4,7 @@
 
 **Neural Speciation** is an evolutionary computation framework designed to discover the "Universal Laws of Generalization" in Transformer architectures.
 
-<img width="1251" height="587" alt="image" src="https://github.com/user-attachments/assets/d97b3a39-71b0-4eae-876a-6204182e58b2" />
+<img width="903" height="551" alt="image" src="https://github.com/user-attachments/assets/21d0b130-db8d-4383-aa2d-0ca1080da910" />
 
 Instead of treating hyperparameter initialization (Learning Rates, Betas, Weight Variances) as static constants, this project treats them as a **Genome Sequence containing 17 genes**. By simulating natural selection, sexual reproduction, and mutation over thousands of generations, we evolve MicroTransformers that "Grok" (generalize) modular arithmetic tasks with superhuman efficiency.
 
