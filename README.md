@@ -6,9 +6,6 @@
 
 Instead of treating hyperparameter initialization (Learning Rates, Betas, Weight Variances) as static constants, this project treats them as a **Genome Sequence containing 17 genes**. By simulating natural selection, sexual reproduction, and mutation over thousands of generations, we evolve MicroTransformers that "Grok" (generalize) modular arithmetic tasks with superhuman efficiency.
 
-![Dashboard Preview](screenshots/dashboard_preview.png)
-*(3D Phylogenetic Dashboard: Visualizing distinct clusters of hyperparameter "species" that solved the task.)*
-
 ## 🧬 The Science: Why Evolve Initialization?
 
 In Deep Learning, we often initialize weights using standard heuristics (Xavier, Kaiming) and tune learning rates via grid search. **Neural Speciation** challenges this dogma.
@@ -39,7 +36,7 @@ The models evolve 17 distinct genes. Rather than random noise, these parameters 
 This repository is a unified GUI application comprising four distinct modules, each serving a specific stage in the scientific pipeline.
 
 ### 1. 🧬 The Evolutionary Lab (`evolve.py`)
-![Evolution Lab Interface](screenshots/evolve_lab.png)
+<img width="1919" height="1023" alt="evolution_lab" src="https://github.com/user-attachments/assets/db94a38a-1c28-4be2-815a-a97e1fff5bad" />
 
 The heart of the simulation. This module manages population dynamics and the "Battle Arena" where models live or die based on their ability to generalize.
 
@@ -55,11 +52,12 @@ The heart of the simulation. This module manages population dynamics and the "Ba
 *   **Population Diversity Controls:**
     *   *Aliens:* Injects completely random genomes into the population every generation to prevent inbreeding depression.
     *   *Elites:* The "Immortality" mechanic. The top N organisms are cloned into the next generation, but they suffer from **Senescence**—they must re-prove their fitness every generation. If they fail a trial due to a bad seed, they lose their Elite status and die.
+*   **Population Diversity View:** Displays genetic diversity of the population as an RGB grid. The more similar the colors, the more closely related the genomes.
 *   **Hall of Fame:** Hashes distinct genomes and saves the elite to the registry.
     *   *Strictness:* Setting to determine how fit a genome must be to be admitted to the Hall of Fame.
 
 ### 2. 🔨 The Gene Forge (`gene_forge.py`)
-![Gene Forge Interface](screenshots/gene_forge.png)
+<img width="1919" height="1027" alt="gene_forge" src="https://github.com/user-attachments/assets/68707a9b-cee7-4166-a780-64a438bf8fa7" />
 
 A tool for **Genetic Engineering** and **Horizontal Gene Transfer (HGT)**.
 
@@ -69,7 +67,7 @@ A tool for **Genetic Engineering** and **Horizontal Gene Transfer (HGT)**.
 *   **Custom Genomes:** Supports saving custom genomes in their own directory where their .json files can be imported into the Evolution Lab or Stress Tests.
 
 ### 3. 🧪 The Stress Chamber (`stress_test.py`)
-![Stress Test Interface](screenshots/stress_test.png)
+<img width="811" height="1022" alt="stress_test" src="https://github.com/user-attachments/assets/a5548785-c54c-463c-b307-9c10d592e050" />
 
 Scientific rigor is paramount. A genome might perform well once due to a lucky random seed. This module acts as the "Peer Review" phase.
 
@@ -80,7 +78,7 @@ Scientific rigor is paramount. A genome might perform well once due to a lucky r
     *   *Legend Controls:* Robust legend controls, allowing showing and hiding of groups, individual genomes, lines / boxes / confidence intervals, etc to allow you to get your perfect shot of your data.
 
 ### 4. 📊 The Phylogenetic Dashboard (`neural_speciation_dashboard.py`)
-![Dashboard Interface](screenshots/dashboard_3d.png)
+<img width="1919" height="613" alt="neural_speciation" src="https://github.com/user-attachments/assets/0e65afab-b9a0-412d-bf1d-0a05fc0367b9" />
 
 A hardware-accelerated 3D visualization of the fitness landscape.
 
